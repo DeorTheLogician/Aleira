@@ -17,3 +17,5 @@ draw_circle_color(x, y - (bbox_bottom - bbox_top)/2, radius, element_color, elem
 //         draw_debug_text(x, y, string(measure_progress div frames_per_beat));
 //     break;
 // }
+
+draw_debug_text(x, y, string(uses));

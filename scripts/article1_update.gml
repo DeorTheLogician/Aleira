@@ -22,6 +22,7 @@ with(asset_get("oPlayer")) {
 
 if(init = true) {
     init = false;
+    // print_debug(string(element));
     sprite_index = sprite_get("berimbau" + string(element));
 }
 
@@ -33,11 +34,17 @@ else {
             
             if(measure_progress == 0 && !bad_timing_lockout) {
                 can_burst = true;
+                has_decremented = false;
                 print_debug("can burst");
             }
 
             if(can_burst && (measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[player] && player_id.attack_pressed) {
                 print_debug("pressed on time");
+                spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 148);
+                spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 302);
+                create_hitbox(AT_EXTRA_1, 1, x, y + (bbox_top - bbox_bottom)/2);
+                sound_play(asset_get("sfx_zetter_fireball_fire"), false, noone, 1, .5);
+                decrement_uses();
                 can_burst = false;
             }
 

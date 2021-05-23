@@ -21,7 +21,6 @@ frames_per_beat = (60 * 60) / 120;    //Number of frames for one beat.
 beats_per_bar = 2;
 bar_length = frames_per_beat * beats_per_bar;
 can_burst = false;
-bad_timing_lockout = 0;
 leniancy = 15;
 
 //  Air Traits
@@ -31,6 +30,5 @@ gravity_reduction = 0.9;
 slow_factor = 0.8;
 hitstun_decay_factor = 0.99108;
 hitstun_decay_max = 1.776;
-
 
 //  Earth Traits

@@ -6,7 +6,6 @@ if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_FSPECIAL_AIR 
 switch(attack)
 {
     case AT_DSPECIAL:
-        if(!free && window == 2 && window_timer == 1) {
             boom_box_id = instance_create(x, y, "obj_article1");
             boom_box_id.player_id = self;
             boom_box_id.player = player;

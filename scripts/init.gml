@@ -42,7 +42,6 @@ skip_moves[| 1] = AT_DATTACK;
 //Moves that increase the stance value by 3.
 back_moves = ds_list_create();
 back_moves[| 0] = AT_UTILT;
-// back_moves[| 1] = AT_USTRONG;
 back_moves[| 2] = AT_UAIR;
 
 //Fire Stats

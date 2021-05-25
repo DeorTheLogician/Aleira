@@ -27,6 +27,7 @@ set_move_hitbox_property(AT_USTRONG, 1, HG_WIDTH,                   [82, 82, 82,
 set_move_hitbox_property(AT_USTRONG, 1, HG_HEIGHT,                  [97, 97, 97, 96]);
 set_move_hitbox_property(AT_USTRONG, 1, HG_BASE_KNOCKBACK,          [ 5,  7,  5,  6]);
 set_move_hitbox_property(AT_USTRONG, 1, HG_KNOCKBACK_SCALING,       [.7, .5, .7, .8]);
+set_move_hitbox_property(AT_USTRONG, 1, HG_HIT_LOCKOUT,             [ 0,  0,  0,  6]);
 
 set_move_hitbox_property(AT_USTRONG, 2, HG_LIFETIME,                [ 3,  2,  3,  3]);
 set_move_hitbox_property(AT_USTRONG, 2, HG_DAMAGE,                  [ 7,  6,  7, 15]);
@@ -47,6 +48,7 @@ set_move_hitbox_property(AT_USTRONG, 3, HG_WIDTH,                   [52, 52, 52,
 set_move_hitbox_property(AT_USTRONG, 3, HG_HEIGHT,                  [96, 95, 95, 97]);
 set_move_hitbox_property(AT_USTRONG, 3, HG_BASE_KNOCKBACK,          [ 5,  7,  5,  6]);
 set_move_hitbox_property(AT_USTRONG, 3, HG_KNOCKBACK_SCALING,       [.7, .5, .7, .8]);
+set_move_hitbox_property(AT_USTRONG, 3, HG_HIT_LOCKOUT,             [ 0,  0,  0,  6]);
 
 set_move_hitbox_property(AT_USTRONG, 4, HG_WINDOW_CREATION_FRAME,   [12,  8, 12,  5]);
 set_move_hitbox_property(AT_USTRONG, 4, HG_LIFETIME,                [ 3,  2,  3,  3]);

@@ -179,6 +179,7 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
             dash_speed = fire_dash_speed;
             dash_turn_time = fire_dash_turn_time;
             dash_turn_accel = fire_dash_turn_accel;
+            ground_friction = fire_ground_friction;
             moonwalk_accel = fire_moonwalk_accel;
 
             jump_speed = fire_jump_speed;
@@ -212,6 +213,7 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
             dash_speed = air_dash_speed;
             dash_turn_time = air_dash_turn_time;
             dash_turn_accel = air_dash_turn_accel;
+            ground_friction = air_ground_friction;
             moonwalk_accel = air_moonwalk_accel;
 
             jump_speed = air_jump_speed;
@@ -245,6 +247,7 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
             dash_speed = water_dash_speed;
             dash_turn_time = water_dash_turn_time;
             dash_turn_accel = water_dash_turn_accel;
+            ground_friction = water_ground_friction;
             moonwalk_accel = water_moonwalk_accel;
 
             jump_speed = water_jump_speed;
@@ -278,6 +281,7 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
             dash_speed = earth_dash_speed;
             dash_turn_time = earth_dash_turn_time;
             dash_turn_accel = earth_dash_turn_accel;
+            ground_friction = earth_ground_friction;
             moonwalk_accel = earth_moonwalk_accel;
 
             jump_speed = earth_jump_speed;

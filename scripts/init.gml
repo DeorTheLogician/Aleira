@@ -56,6 +56,7 @@ fire_initial_dash_speed = 7;
 fire_dash_speed = 6.75;
 fire_dash_turn_time = 10;
 fire_dash_turn_accel = 1.5;
+fire_ground_friction = .46;
 fire_moonwalk_accel = 1.2;
 
 fire_jump_speed = 10.75;
@@ -88,6 +89,7 @@ air_initial_dash_speed = 4.5;
 air_dash_speed = 5.75;
 air_dash_turn_time = 10;
 air_dash_turn_accel = 1.5;
+air_ground_friction = .63;
 air_moonwalk_accel = 1.15;
 
 air_jump_speed = 7.6;
@@ -120,6 +122,7 @@ water_initial_dash_speed = 7;
 water_dash_speed = 6;
 water_dash_turn_time = 12;
 water_dash_turn_accel = 0.1;
+water_ground_friction = .2;
 water_moonwalk_accel = 1.5;
 
 water_jump_speed = 10;
@@ -152,6 +155,7 @@ earth_initial_dash_speed = 6;
 earth_dash_speed = 5.5;
 earth_dash_turn_time = 10;
 earth_dash_turn_accel = 0.5;
+earth_ground_friction = .76;
 earth_moonwalk_accel = 1.15;
 
 earth_jump_speed = 12;
@@ -193,7 +197,7 @@ dash_turn_time = fire_dash_turn_time;
 dash_turn_accel = fire_dash_turn_accel;
 dash_stop_time = 4;
 dash_stop_percent = .35; //the value to multiply your hsp by when going into idle from dash or dashstop
-ground_friction = .5;
+ground_friction = fire_ground_friction;
 moonwalk_accel = fire_moonwalk_accel;
 
 jump_start_time = 5;
@@ -247,8 +251,8 @@ techroll_speed = 10;
 
 //airdodge animation frames
 air_dodge_startup_frames = 1;
-air_dodge_active_frames = 3;
-air_dodge_recovery_frames = 3;
+air_dodge_active_frames = 2;
+air_dodge_recovery_frames = 1;
 air_dodge_speed = 7.5;
 
 //roll animation frames

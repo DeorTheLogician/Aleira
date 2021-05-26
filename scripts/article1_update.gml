@@ -31,30 +31,9 @@ else {
     switch(element) {
         case 0: //Fire Behavior
             measure_progress = time_since_creation % bar_length;
-            
-            if(measure_progress == 0 && !bad_timing_lockout) {
-                can_burst = true;
-                has_decremented = false;
-                print_debug("can burst");
-            }
 
-            if(can_burst && (measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[player] && player_id.attack_pressed) {
-                print_debug("pressed on time");
-                spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 148);
-                spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 302);
-                create_hitbox(AT_EXTRA_1, 1, x, y + (bbox_top - bbox_bottom)/2);
-                sound_play(asset_get("sfx_zetter_fireball_fire"), false, noone, 1, .5);
-                decrement_uses();
-                can_burst = false;
-            }
 
-            if(!(measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[player] && player_id.attack_pressed) {
-                print_debug("pressed at " + string  (measure_progress));
-                bad_timing_lockout = bar_length + (bar_length - measure_progress);
-            }
 
-            if(bad_timing_lockout > 0) {
-                bad_timing_lockout--;
             }
             break;
         
@@ -64,7 +43,6 @@ else {
                     if(player_in_range[other.player] && other.free && other.vsp >= 0 && other.state_cat != SC_HITSTUN) {
                         other.vsp -= other.gravity_speed * gravity_reduction;
 
-                        if(other.state == PS_ATTACK_AIR) {
                             decrement_uses();
                         } else {
                             has_decremented = false;
@@ -161,7 +139,6 @@ if(image_index < idle_anim_frame_start) {
 #define decrement_uses {
     if(!has_decremented) {
         uses--;
-        sound_play(use_decrement_sound, false, noone, 4, 1.5);
     }
 
     has_decremented = true;

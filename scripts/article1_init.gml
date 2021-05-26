@@ -9,7 +9,6 @@ idle_anim_length = 10;
 anim_speed = 1/6;
 
 //General Traits
-use_decrement_sound = asset_get("sfx_kragg_rock_land");
 creation_time = get_gameplay_time();
 uses_shader = true;
 init = true;

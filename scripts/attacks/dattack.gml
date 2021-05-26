@@ -4,6 +4,7 @@
 //  Windows
 set_move_num_windows(AT_DATTACK, 5);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 6,  6,  6, 10]);
+set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [14, 16, 12, 17]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, [ 2, 2,  2,  2]);
 
 set_move_window_property(AT_DATTACK, 2, AG_WINDOW_LENGTH, [ 4,  2,  3,  8]);
@@ -21,6 +22,8 @@ set_move_window_property(AT_DATTACK, 4, AG_WINDOW_ANIM_FRAME_START, [ 7,  7,  7,
 
 set_move_window_property(AT_DATTACK, 5, AG_WINDOW_LENGTH, [ 15, 15, 15, 18]);
 set_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAMES, [ 5,  5,  5,  5]);
+set_move_window_property(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, [ 0,  0,  1,  0]);
+set_move_window_property(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, [.4, .6,  1, .7]);
 set_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, [ 8,  8,  8, 8]);
 
 //  Hitboxes
@@ -69,6 +72,7 @@ set_attack_value(AT_DATTACK, AG_NUM_WINDOWS, 5);
 
 set_window_value(AT_DATTACK, 1, AG_WINDOW_LENGTH, get_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, get_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, stance));
+set_window_value(AT_DATTACK, 1, AG_WINDOW_HSPEED, get_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, stance));
 set_window_value(AT_DATTACK, 1, AG_WINDOW_HSPEED_TYPE, 2);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy1"));
@@ -94,6 +98,8 @@ set_window_value(AT_DATTACK, 4, AG_WINDOW_ANIM_FRAME_START, get_move_window_prop
 
 set_window_value(AT_DATTACK, 5, AG_WINDOW_LENGTH, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAMES, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAMES, stance));
+set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, stance));
+set_window_value(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_WHIFFLAG, true);
 

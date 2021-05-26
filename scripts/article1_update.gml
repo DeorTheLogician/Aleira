@@ -31,9 +31,41 @@ else {
     switch(element) {
         case 0: //Fire Behavior
             measure_progress = time_since_creation % bar_length;
+            with(asset_get("oPlayer")) {
+                with(other) {
+                    if(measure_progress % frames_per_beat == 0 && !bad_timing_lockout) {
+                        sound_play(metronome_sound, false, (measure_progress div 15) - 1, 1, 1.25 - (measure_progress/bar_length));
+                    }
+
+                    if(measure_progress == leniancy && !bad_timing_lockout) {
+                        can_burst = true;
+                        has_decremented = false;
+                    }
 
 
+                    if(can_burst && (measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[other.player] && other.attack_pressed && other.state != PS_HITSTUN) {
+                        spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 148);
+                        spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 302);
 
+                        var explosion = create_hitbox(AT_EXTRA_1, 1, x, y + (bbox_top - bbox_bottom)/2);
+                        explosion.player = other.player;
+                        
+                        sound_play(explosion_sound, false, noone, 1, .4 + .3*uses);
+                        
+                        decrement_uses();
+                        
+                        can_burst = false;
+                    }
+
+                    if(!(measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[other.player] && other.attack_pressed && other.state != PS_HITSTUN) {
+                        bad_timing_lockout = bar_length + (bar_length - measure_progress);
+                        sound_play(missed_input_sound, false, noone, .25, .75);
+                    }
+
+                    if(bad_timing_lockout > 0) {
+                        bad_timing_lockout--;
+                    }
+                }
             }
             break;
         
@@ -43,6 +75,7 @@ else {
                     if(player_in_range[other.player] && other.free && other.vsp >= 0 && other.state_cat != SC_HITSTUN) {
                         other.vsp -= other.gravity_speed * gravity_reduction;
 
+                        if(other.state == PS_ATTACK_AIR && other.window == 1 && other.window_timer == 0) {
                             decrement_uses();
                         } else {
                             has_decremented = false;
@@ -139,6 +172,7 @@ if(image_index < idle_anim_frame_start) {
 #define decrement_uses {
     if(!has_decremented) {
         uses--;
+        sound_play(use_decrement_sound, false, noone, 1, 1 + .25*uses);
     }
 
     has_decremented = true;

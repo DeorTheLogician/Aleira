@@ -9,6 +9,7 @@ idle_anim_length = 10;
 anim_speed = 1/6;
 
 //General Traits
+use_decrement_sound = asset_get("mfx_input_back");
 creation_time = get_gameplay_time();
 uses_shader = true;
 init = true;
@@ -31,6 +32,9 @@ bar_length = frames_per_beat * beats_per_bar;
 can_burst = false;
 bad_timing_lockout = bar_length;
 leniancy = 15;
+metronome_sound = asset_get("mfx_input_key");
+missed_input_sound = asset_get("mfx_tut_fail");
+explosion_sound = asset_get("sfx_zetter_fireball_fire");
 
 //  Air Traits
 gravity_reduction = 0.9;

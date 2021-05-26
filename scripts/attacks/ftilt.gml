@@ -4,14 +4,11 @@
 //  Windows
 set_move_num_windows(AT_FTILT, 3);
 set_move_window_property(AT_FTILT, 1, AG_WINDOW_LENGTH, [ 5,  5,  8, 10]);
-set_move_window_property(AT_FTILT, 1, AG_WINDOW_CUSTOM_GROUND_FRICTION, [.5, .5,.05, .7]);
 set_move_window_property(AT_FTILT, 1, AG_WINDOW_SFX_FRAME, [ 4,  4,  7,  9]);
 
 set_move_window_property(AT_FTILT, 2, AG_WINDOW_LENGTH, [ 3,  3, 7, 3]);
-set_move_window_property(AT_FTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, [.5, .5,.05, .7]);
 
 set_move_window_property(AT_FTILT, 3, AG_WINDOW_LENGTH, [ 8,  8, 10, 12]);
-set_move_window_property(AT_FTILT, 3, AG_WINDOW_CUSTOM_GROUND_FRICTION, [.5, .5,.05, .7]);
 
 //  Hitboxes
 set_move_num_hitboxes(AT_FTILT, 2);
@@ -39,21 +36,16 @@ set_attack_value(AT_FTILT, AG_HURTBOX_SPRITE, sprite_get("ftilt_hurt"));
 
 set_window_value(AT_FTILT, 1, AG_WINDOW_LENGTH, get_move_window_property(AT_FTILT, 1, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_FTILT, 1, AG_WINDOW_ANIM_FRAMES, 2);
-set_window_value(AT_FTILT, 1, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
-set_window_value(AT_FTILT, 1, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_FTILT, 1, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
 set_window_value(AT_FTILT, 1, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_FTILT, 1, AG_WINDOW_SFX, asset_get("sfx_swipe_weak1"));
 set_window_value(AT_FTILT, 1, AG_WINDOW_SFX_FRAME, get_move_window_property(AT_FTILT, 1, AG_WINDOW_SFX_FRAME, stance));
 
 set_window_value(AT_FTILT, 2, AG_WINDOW_LENGTH, get_move_window_property(AT_FTILT, 2, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_FTILT, 2, AG_WINDOW_ANIM_FRAMES, 2);
-set_window_value(AT_FTILT, 2, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
-set_window_value(AT_FTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_FTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
 set_window_value(AT_FTILT, 2, AG_WINDOW_ANIM_FRAME_START, 2);
 
 set_window_value(AT_FTILT, 3, AG_WINDOW_LENGTH, get_move_window_property(AT_FTILT, 3, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_FTILT, 3, AG_WINDOW_ANIM_FRAMES, 4);
-set_window_value(AT_FTILT, 3, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
 set_window_value(AT_FTILT, 3, AG_WINDOW_ANIM_FRAME_START, 4);
 set_window_value(AT_FTILT, 3, AG_WINDOW_HAS_WHIFFLAG, 1);
 

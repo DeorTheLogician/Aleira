@@ -4,3 +4,6 @@
 //     shader_start();
 //     draw_sprite( boom_box_id.sprite_index, boom_box_id.image_index, boom_box_id.x - 100, boom_box_id.y );
 //     shader_end();
+// }
+
+// draw_circle_color(x, y, 1, c_yellow, c_yellow, false);

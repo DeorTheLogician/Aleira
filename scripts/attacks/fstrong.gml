@@ -48,6 +48,8 @@ set_window_value(AT_FSTRONG, 2, AG_WINDOW_SFX_FRAME, 0);
 
 set_window_value(AT_FSTRONG, 3, AG_WINDOW_LENGTH, get_move_window_property(AT_FSTRONG, 3, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_FSTRONG, 3, AG_WINDOW_ANIM_FRAMES, get_move_window_property(AT_FSTRONG, 3, AG_WINDOW_ANIM_FRAMES, stance));
+set_window_value(AT_FSTRONG, 3, AG_WINDOW_HSPEED, 5);
+set_window_value(AT_FSTRONG, 3, AG_WINDOW_HSPEED_TYPE, 2);
 set_window_value(AT_FSTRONG, 3, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_FSTRONG, 3, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy1"));
 set_window_value(AT_FSTRONG, 3, AG_WINDOW_SFX_FRAME, 0);

@@ -77,6 +77,14 @@ switch(attack)
             window = 5;
             window_timer = 0;//max(0, get_window_value(attack, window, AG_WINDOW_LENGTH) - window_timer - 1);
         }
+        break;
+
+    case AT_TAUNT:
+        if(window == 2 && state_timer > get_window_value(attack, window, AG_WINDOW_LENGTH) + get_window_value(attack, 1, AG_WINDOW_LENGTH)) {
+            can_jump = true;
+            can_shield = true;
+        }
+        break;
 
     default:
         break;

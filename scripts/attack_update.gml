@@ -55,6 +55,12 @@ switch(attack)
 
         break;
 
+    case AT_USPECIAL:
+        if(stance != 3) {
+            can_fast_fall = false;
+        }
+        break;
+
     case AT_DATTACK:
         switch(stance) {
             case 3:

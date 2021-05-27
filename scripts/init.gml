@@ -38,6 +38,7 @@ forward_moves[| 2] = AT_DAIR;
 skip_moves = ds_list_create();
 skip_moves[| 0] = AT_FSTRONG;
 skip_moves[| 1] = AT_DATTACK;
+skip_moves[| 2] = AT_BAIR;
 
 //Moves that increase the stance value by 3.
 back_moves = ds_list_create();
@@ -299,6 +300,8 @@ stance_affected_moves = [AT_NAIR,
                          AT_UTILT,
                          AT_DSTRONG,
                          AT_FSTRONG,
+                         AT_USTRONG,
+                         AT_BAIR];
 
 move_data = array_create(50, 0);
 

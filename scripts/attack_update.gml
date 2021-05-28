@@ -81,7 +81,6 @@ switch(attack)
     case AT_UTILT:
         if(window == 4 && free) {
             window = 5;
-            window_timer = 0;//max(0, get_window_value(attack, window, AG_WINDOW_LENGTH) - window_timer - 1);
         }
         break;
 

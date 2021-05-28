@@ -43,12 +43,11 @@ sprite_change_offset("dair", 76, 136);
 sprite_change_offset("fstrong", 64, 140);
 sprite_change_offset("ustrong", 64, 140);
 sprite_change_offset("dstrong", 64, 140);
-sprite_change_offset("nspecial", 46, 104);      //
-sprite_change_offset("nspecial_air", 78, 140);  //
-sprite_change_offset("fspecial", 74, 104);      //
-sprite_change_offset("fspecial_air", 78, 140);  //
-sprite_change_offset("uspecial", 156, 198);     //
-sprite_change_offset("uspecial_air", 156, 198); //
+sprite_change_offset("nspecial", 76, 154);
+sprite_change_offset("nspecial_air", 76, 136);
+sprite_change_offset("fspecial", 76, 136);
+sprite_change_offset("uspecial", 76, 140);
+sprite_change_offset("uspecial_air", 76, 136);
 sprite_change_offset("dspecial", 76, 136);
 sprite_change_offset("taunt", 76, 140);
 

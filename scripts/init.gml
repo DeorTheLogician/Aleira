@@ -303,7 +303,9 @@ stance_affected_moves = [AT_NAIR,
                          AT_DSTRONG,
                          AT_FSTRONG,
                          AT_USTRONG,
-                         AT_BAIR];
+                         AT_BAIR,
+                         AT_DAIR
+                         AT_FAIR];
 
 move_data = array_create(50, 0);
 

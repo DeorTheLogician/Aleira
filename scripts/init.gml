@@ -5,6 +5,8 @@ hitstun_hurtbox_spr = -1;
 
 //Move variables
 dattack_earth_armor = 18;
+air_dair_loop_count = 3;
+air_dair_loop_current = 0;
 
 //Stance Variables
 stance = 0; //0 = Fire, 1 = Air, 2 = Water, 3 = Earth

@@ -81,6 +81,25 @@ switch(attack)
     case AT_UTILT:
         if(window == 4 && free) {
             window = 5;
+            window_timer = 0;
+        }
+        break;
+
+    case AT_DAIR:
+        if(stance == 1) {
+            if(window == 1 && window_timer == 1) {
+                air_dair_loop_current = 0;
+            }
+
+            if(window == 2 && window_timer == 1) {
+                if(air_dair_loop_current < air_dair_loop_count) {
+                    air_dair_loop_current++;
+                    attack_end();
+                } else {
+                    window = 3;
+                    window_timer = 0;
+                }
+            }
         }
         break;
 

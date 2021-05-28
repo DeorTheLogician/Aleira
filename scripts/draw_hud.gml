@@ -2,7 +2,7 @@
 
 draw_debug_text(5, 435, "window: " + string(window));
 draw_debug_text(5, 450, "window_timer: " + string(window_timer));
-draw_debug_text(5, 420, "state_timer: " + string(state_timer + 1));
+draw_debug_text(5, 420, "state_timer: " + string(state_timer - 1));
 
 if("stance" in self) {
     clock_rad = 10;

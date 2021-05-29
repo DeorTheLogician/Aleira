@@ -1,3 +1,5 @@
+sprite_change_offset("idle_hurt", 76, 140);
+sprite_change_offset("crouch_hurt", 70, 140);
 sprite_change_offset("idle", 76, 140);
 sprite_change_offset("crouch", 70, 140);
 sprite_change_offset("walk", 76, 140);
@@ -23,12 +25,12 @@ sprite_change_offset("waveland", 82, 140);
 sprite_change_offset("tech", 82, 140);
 
 sprite_change_offset("hurt", 76, 142);
-sprite_change_offset("bighurt", 64, 110);   //
+sprite_change_offset("bighurt", 64, 110);
 sprite_change_offset("hurtground", 76, 140);
 sprite_change_offset("uphurt", 76, 138);
 sprite_change_offset("downhurt", 76, 128);
 sprite_change_offset("bouncehurt", 76, 138);
-sprite_change_offset("spinhurt", 64, 110);  //
+sprite_change_offset("spinhurt", 64, 110);
 
 sprite_change_offset("jab", 70, 140);
 sprite_change_offset("dattack", 64, 140);
@@ -53,13 +55,20 @@ sprite_change_offset("taunt", 76, 140);
 
 sprite_change_offset("plat", 64, 96);
 
+// sprite_change_offset("berimbau_mask", 0, 84);
 sprite_change_offset("berimbau", 18, 84);
 sprite_change_offset("berimbau0", 18, 84);
 sprite_change_offset("berimbau1", 18, 84);
 sprite_change_offset("berimbau2", 18, 84);
 sprite_change_offset("berimbau3", 18, 84);
 
-sprite_change_offset("clock_empty", 27, 27);
+sprite_change_offset("berimbau_break", 18, 84);
+sprite_change_offset("berimbau0_break", 18, 84);
+sprite_change_offset("berimbau1_break", 18, 84);
+sprite_change_offset("berimbau2_break", 18, 84);
+sprite_change_offset("berimbau3_break", 18, 84);
+
+sprite_change_offset("clock_face", 27, 27);
 sprite_change_offset("clock_big_hand", 27, 27);
 sprite_change_offset("clock_smol_hand", 27, 27);
 

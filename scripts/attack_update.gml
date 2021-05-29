@@ -11,6 +11,7 @@ switch(attack)
             boom_box_id.player_id = self;
             boom_box_id.player = player;
             boom_box_id.element = stance;
+            move_cooldown[attack] = dspecial_cooldown;
         }
         break;
 

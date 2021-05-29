@@ -1,11 +1,11 @@
 //Database Initialization
 //  Properties
-set_move_property(AT_FAIR, AG_LANDING_LAG, [ 6,  8,  4, 8]);
+set_move_property(AT_FAIR, AG_LANDING_LAG, [ 6,  8,  4,  8]);
 
 //  Windows
 set_move_num_windows(AT_FAIR, 3);
 set_move_window_property(AT_FAIR, 1, AG_WINDOW_LENGTH,      [ 3,  5,  4, 11]);
-set_move_window_property(AT_FAIR, 1, AG_WINDOW_SFX_FRAME,   [ 2,  4,  3, 12]);
+set_move_window_property(AT_FAIR, 1, AG_WINDOW_SFX_FRAME,   [ 2,  4,  3, 10]);
 set_move_window_property(AT_FAIR, 1, AG_WINDOW_SFX, [asset_get("sfx_swipe_medium2"), asset_get("sfx_swipe_weak2"), asset_get("sfx_swipe_medium2"), asset_get("sfx_swipe_heavy1")]);
 
 set_move_window_property(AT_FAIR, 2, AG_WINDOW_LENGTH,              [ 6, 14, 24,  6]);

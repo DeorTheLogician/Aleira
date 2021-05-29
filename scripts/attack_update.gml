@@ -115,6 +115,7 @@ switch(attack)
 }
 
 if(window == 1 && window_timer == 1) {
+    sound_play(tick_sound, false, noone, .5, 1.5 - .15 * (stance_ticker % ticker_segment_length));
     stance_ticker = (stance_ticker + 1) % ticker_max;
 }
 
@@ -134,7 +135,7 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
     //Adds argument0 mod argument1 to state and updates stats.
     //argument0 = number of steps forward
     //argument1 = number of stances
-    var load_start = current_time;
+    // var load_start = current_time;
 
     if(!stance_locked) {
         set_stance((stance + argument0) % argument1);
@@ -149,8 +150,10 @@ if(window >= get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && st
 }
 
 #define set_stance {
+    last_stance = stance;
     stance = argument0;
     stance_change_time = get_gameplay_time();
+    sound_play(stance_sounds[stance], false, noone, 1, .75);
     set_stance_stats(stance);
     reset_moves(stance);
 }

@@ -26,9 +26,16 @@ stance_colors = [stance_color_fire, stance_color_air, stance_color_water, stance
 
 stance_color_current = stance_colors[0];
 
+var stance_sound_fire = asset_get("sfx_zetter_fireball_fire");
+var stance_sound_air = asset_get("sfx_bird_sidespecial_start");
+var stance_sound_water = asset_get("sfx_watergun_splash");
+var stance_sound_earth = asset_get("sfx_kragg_rock_pull");
+stance_sounds = [stance_sound_fire, stance_sound_air, stance_sound_water, stance_sound_earth];
+
 stance_ticker = 0;  //Action counter. Ticks up when a stance action is performed. When it ticks up ticker_segment_length, can change stances.
 ticker_segment_length = 4;  //Number of stance actions required to change stances.
 ticker_max = ticker_segment_length * num_stances;   //Number of ticks to get around the whole tracking clock UI element. For cosmetic purposes only.
+tick_sound = asset_get("sfx_springswitch");
 
 //Moves that increase the stance value by 1
 forward_moves = ds_list_create();

@@ -4,6 +4,7 @@ air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
 //Move variables
+dspecial_cooldown = 60;
 dattack_earth_armor = 18;
 air_dair_loop_count = 3;
 air_dair_loop_current = 0;

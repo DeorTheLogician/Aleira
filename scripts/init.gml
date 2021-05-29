@@ -1,5 +1,6 @@
-hurtbox_spr = asset_get("ex_guy_hurt_box");
-crouchbox_spr = asset_get("ex_guy_crouch_box");
+hurtbox_spr = sprite_get("idle_hurt");
+crouchbox_spr = sprite_get("crouch_hurt");
+hurtbox_dash_spr = sprite_get("dash_hurt");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 

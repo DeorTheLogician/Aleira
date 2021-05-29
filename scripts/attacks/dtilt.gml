@@ -7,7 +7,7 @@ set_move_window_property(AT_DTILT, 1, AG_WINDOW_LENGTH, [ 5,  4,  7, 8]);
 
 set_move_window_property(AT_DTILT, 2, AG_WINDOW_LENGTH, [ 6,  4,  9,  4]);
 set_move_window_property(AT_DTILT, 2, AG_WINDOW_ANIM_FRAMES, [ 2,  2,  3,  2]);
-set_move_window_property(AT_DTILT, 2, AG_WINDOW_HSPEED, [ 8,  4,  8, 10]);
+set_move_window_property(AT_DTILT, 2, AG_WINDOW_HSPEED, [ 5,  5,  4,  6]);
 set_move_window_property(AT_DTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, [.5, .5,.05, .7]);
 
 set_move_window_property(AT_DTILT, 3, AG_WINDOW_LENGTH, [12, 12,  8, 13]);

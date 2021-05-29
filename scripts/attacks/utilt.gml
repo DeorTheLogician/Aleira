@@ -5,16 +5,15 @@
 set_move_num_windows(AT_UTILT, 5);
 set_move_window_property(AT_UTILT, 1, AG_WINDOW_LENGTH, [ 3,  3,  3, 6]);
 
-set_move_window_property(AT_UTILT, 2, AG_WINDOW_HSPEED, [ 4,  5,  6,  4]);
-set_move_window_property(AT_UTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, [fire_air_friction, air_air_friction, water_air_friction, earth_air_friction]);
+set_move_window_property(AT_UTILT, 2, AG_WINDOW_HSPEED, [ 7, 10,  6, 10]);
+set_move_window_property(AT_UTILT, 2, AG_WINDOW_CUSTOM_AIR_FRICTION, [fire_ground_friction, air_ground_friction, water_ground_friction, earth_ground_friction]);
 
 set_move_window_property(AT_UTILT, 3, AG_WINDOW_LENGTH, [ 8,  10,  8,  5]);
-set_move_window_property(AT_UTILT, 3, AG_WINDOW_CUSTOM_GROUND_FRICTION, [fire_air_friction, air_air_friction, water_air_friction, earth_air_friction]);
+set_move_window_property(AT_UTILT, 3, AG_WINDOW_CUSTOM_AIR_FRICTION, [fire_ground_friction, air_ground_friction, water_ground_friction, earth_ground_friction]);
 
 set_move_window_property(AT_UTILT, 4, AG_WINDOW_LENGTH, [ 6, 10,  6,  4]);
 
 set_move_window_property(AT_UTILT, 5, AG_WINDOW_LENGTH, [ 6,  4,  6, 10]);
-
 // //  Hitboxes
 set_move_num_hitboxes(AT_UTILT, 1);
 set_move_hitbox_property(AT_UTILT, 1, HG_LIFETIME, [ 8, 10,  8,  5]);
@@ -41,7 +40,7 @@ set_window_value(AT_UTILT, 2, AG_WINDOW_ANIM_FRAMES, 1);
 set_window_value(AT_UTILT, 2, AG_WINDOW_HSPEED, get_move_window_property(AT_UTILT, 2, AG_WINDOW_HSPEED, stance));
 set_window_value(AT_UTILT, 2, AG_WINDOW_HSPEED_TYPE, 2);
 set_window_value(AT_UTILT, 2, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
-set_window_value(AT_UTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_UTILT, 2, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
+set_window_value(AT_UTILT, 2, AG_WINDOW_CUSTOM_AIR_FRICTION, get_move_window_property(AT_UTILT, 2, AG_WINDOW_CUSTOM_AIR_FRICTION, stance));
 set_window_value(AT_UTILT, 2, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_UTILT, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_weak2"));
 set_window_value(AT_UTILT, 2, AG_WINDOW_ANIM_FRAME_START, 1);
@@ -49,7 +48,7 @@ set_window_value(AT_UTILT, 2, AG_WINDOW_ANIM_FRAME_START, 1);
 set_window_value(AT_UTILT, 3, AG_WINDOW_LENGTH, get_move_window_property(AT_UTILT, 3, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_UTILT, 3, AG_WINDOW_ANIM_FRAMES, 2);
 set_window_value(AT_UTILT, 3, AG_WINDOW_HAS_CUSTOM_FRICTION, 1);
-set_window_value(AT_UTILT, 3, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_UTILT, 3, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
+set_window_value(AT_UTILT, 3, AG_WINDOW_CUSTOM_AIR_FRICTION, get_move_window_property(AT_UTILT, 3, AG_WINDOW_CUSTOM_AIR_FRICTION, stance));
 set_window_value(AT_UTILT, 3, AG_WINDOW_ANIM_FRAME_START, 2);
 
 set_window_value(AT_UTILT, 4, AG_WINDOW_LENGTH, get_move_window_property(AT_UTILT, 4, AG_WINDOW_LENGTH, stance));

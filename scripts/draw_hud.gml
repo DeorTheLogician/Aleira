@@ -8,8 +8,8 @@ if("stance" in self) {
     var last_stance_angle = (90 * last_stance) % 360;
     var current_stance_angle = (90 * stance) % 360;
 
-    var clock_offset_x = temp_x - 23;
-    var clock_offset_y = temp_y + 23;
+    var clock_offset_x = temp_x + 9;
+    var clock_offset_y = temp_y + 4;
     if(get_gameplay_time() < stance_change_time + color_change_time) {
         current_stance_angle = last_stance_angle - angle_difference(last_stance_angle, 90 * stance);
         var clock_big_hand_angle = ease_backInOut(last_stance_angle, current_stance_angle, get_gameplay_time() - stance_change_time, color_change_time, 1);
@@ -18,7 +18,7 @@ if("stance" in self) {
 
     var clock_small_hand_angle = ((360/ticker_max) * stance_ticker) % 360;
 
-    draw_sprite_ext(sprite_get("clock_empty"), 0, clock_offset_x, clock_offset_y, 1, 1, 0, c_white, 1);
+    draw_sprite_ext(sprite_get("clock_face"), 0, clock_offset_x, clock_offset_y, 1, 1, 0, c_white, 1);
     draw_sprite_ext(sprite_get("clock_big_hand"), 0, clock_offset_x, clock_offset_y, 1, 1, -clock_big_hand_angle, c_white, 1);
     draw_sprite_ext(sprite_get("clock_smol_hand"), 0, clock_offset_x, clock_offset_y, 1, 1, -clock_small_hand_angle, c_white, 1);
 }

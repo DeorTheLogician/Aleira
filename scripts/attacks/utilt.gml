@@ -5,7 +5,7 @@
 set_move_num_windows(AT_UTILT, 5);
 set_move_window_property(AT_UTILT, 1, AG_WINDOW_LENGTH, [ 3,  3,  3, 6]);
 
-set_move_window_property(AT_UTILT, 2, AG_WINDOW_HSPEED, [ 7, 10,  6, 10]);
+set_move_window_property(AT_UTILT, 2, AG_WINDOW_HSPEED, [ 5,  4,4.5, 7]);
 set_move_window_property(AT_UTILT, 2, AG_WINDOW_CUSTOM_AIR_FRICTION, [fire_ground_friction, air_ground_friction, water_ground_friction, earth_ground_friction]);
 
 set_move_window_property(AT_UTILT, 3, AG_WINDOW_LENGTH, [ 8,  10,  8,  5]);
@@ -14,7 +14,8 @@ set_move_window_property(AT_UTILT, 3, AG_WINDOW_CUSTOM_AIR_FRICTION, [fire_groun
 set_move_window_property(AT_UTILT, 4, AG_WINDOW_LENGTH, [ 6, 10,  6,  4]);
 
 set_move_window_property(AT_UTILT, 5, AG_WINDOW_LENGTH, [ 6,  4,  6, 10]);
-// //  Hitboxes
+
+//  Hitboxes
 set_move_num_hitboxes(AT_UTILT, 1);
 set_move_hitbox_property(AT_UTILT, 1, HG_LIFETIME, [ 8, 10,  8,  5]);
 set_move_hitbox_property(AT_UTILT, 1, HG_DAMAGE, [ 8,  8,  8, 10]);

@@ -2,17 +2,23 @@
 
 //Sprite Traits
 sprite_index = sprite_get("berimbau");
-mask_index = asset_get("ex_guy_hurt_box");
+mask_index = asset_get("ex_guy_hurt");// sprite_get("berimbau_mask");
 image_index = 0;
 idle_anim_frame_start = 0;
 idle_anim_length = 10;
+break_anim_length = 10;
 anim_speed = 1/6;
+break_anim_speed = 1/2;
 
 //General Traits
 use_decrement_sound = asset_get("mfx_input_back");
 creation_time = get_gameplay_time();
 uses_shader = true;
 init = true;
+destroyed = false;
+destroy_time = break_anim_length / break_anim_speed;
+destroy_timer = 0;
+destroy_sound = asset_get("sfx_ice_shatter_big");
 can_be_grouned = true;
 ignores_walls = false;
 gravity_speed = .5;

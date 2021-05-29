@@ -24,9 +24,8 @@ if(init = true) {
     init = false;
     // print_debug(string(element));
     sprite_index = sprite_get("berimbau" + string(element));
-}
-
-else {
+    break_sprite = sprite_get("berimbau" + string(element) + "_break");
+} else if(!destroyed) {
     //Elemental Behavior
     switch(element) {
         case 0: //Fire Behavior
@@ -42,12 +41,12 @@ else {
                         has_decremented = false;
                     }
 
-
-                    if(can_burst && (measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[other.player] && other.attack_pressed && other.state != PS_HITSTUN) {
+                    burst_input = other.attack_pressed || other.up_stick_down || other.right_stick_down || other.down_stick_down || other.left_stick_down;
+                    if(can_burst && (measure_progress < leniancy || measure_progress > bar_length - leniancy) && player_in_range[other.player] && burst_input && other.state != PS_HITSTUN) {
                         spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 148);
                         spawn_hit_fx(x, y + (bbox_top - bbox_bottom)/2, 302);
 
-                        var explosion = create_hitbox(AT_EXTRA_1, 1, x, y + (bbox_top - bbox_bottom)/2);
+                        var explosion = create_hitbox(AT_EXTRA_1, 1, x, y + (bbox_top - bbox_bottom) div 2);
                         explosion.player = other.player;
                         
                         sound_play(explosion_sound, false, noone, 1, .4 + .3*uses);
@@ -157,15 +156,30 @@ else {
     }
 
     if((instance_exists(player_id.boom_box_id) && player_id.boom_box_id != self) || uses <= 0 || x < 0 || x > room_width || y < 0 || y > room_height || place_meeting(x, y, asset_get("plasma_field_obj"))) {
+        destroyed = true;
+    }
+} else {
+    if(destroy_timer == 0) {
+        sprite_index = break_sprite;
+        image_index = 0;
+        sound_play(destroy_sound, false, noone, 1, .75);
+    }
+    
+    player_id.move_cooldown[AT_DSPECIAL] = 2;
+    destroy_timer++;
+
+    if(destroy_timer == destroy_time) {
         instance_destroy();
     }
 }
 
 //Animation
-if(image_index < idle_anim_frame_start) {
-    image_index += anim_speed;
-} else {
-    image_index = (image_index - idle_anim_frame_start + anim_speed) % idle_anim_length + idle_anim_frame_start;
+if(instance_exists(self)) {
+    if(image_index < idle_anim_frame_start) {
+        image_index += (destroyed ? break_anim_speed : anim_speed);
+    } else {
+        image_index = (image_index - idle_anim_frame_start + (destroyed ? break_anim_speed : anim_speed)) % idle_anim_length + idle_anim_frame_start;
+    }
 }
 
 //Functions

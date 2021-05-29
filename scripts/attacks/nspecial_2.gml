@@ -1,10 +1,22 @@
 //Database Initialization
+//  Windows
+set_move_num_windows(AT_NSPECIAL_2, 3);
+set_move_window_property(AT_NSPECIAL_2, 1, AG_WINDOW_LENGTH,            [15, 15, 15, 21]);
+
+set_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_LENGTH,            [ 7,  7, 16,  8]);
+set_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAMES,       [ 7,  7,  8,  2]);
+set_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAME_START,  [17, 17, 11,  4]);
+set_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED,           [-10,-15,  0,  0]);
+set_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED_TYPE,       [ 2,  2,  0,  1]);
+
+set_move_window_property(AT_NSPECIAL_2, 3, AG_WINDOW_VSPEED_TYPE,       [ 1,  1,  0,  1]);
+
 //  Hitboxes
 set_move_num_hitboxes(AT_NSPECIAL_2, 1);
-set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_DAMAGE, [ 11,  5,  16, 14]);
-set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_ANGLE, [75, 45,280,125]);
-set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_BASE_KNOCKBACK, [ 7,  4,  4,  6]);
-set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_KNOCKBACK_SCALING, [.5, .25, .5,1.2]);
+set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_DAMAGE, [11,  5,  12, 14]);
+set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_ANGLE, [75, 65,280,125]);
+set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_BASE_KNOCKBACK, [ 7,  5,  4,  6]);
+set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_KNOCKBACK_SCALING, [.3, .3, .5, 1]);
 set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_BASE_HITPAUSE, [ 7,  8,  5,  7]);
 set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_HITPAUSE_SCALING, [  .3, .3, .8, .3]);
 set_move_hitbox_property(AT_NSPECIAL_2, 1, HG_HIT_SFX, [asset_get("sfx_blow_medium1"), asset_get("sfx_blow_weak1"), asset_get("sfx_blow_medium2"), asset_get("sfx_blow_heavy2")]);
@@ -16,23 +28,27 @@ set_attack_value(AT_NSPECIAL_2, AG_SPRITE, sprite_get("nspecial"));
 set_attack_value(AT_NSPECIAL_2, AG_HURTBOX_SPRITE, sprite_get("nspecial_hurt"));
 set_attack_value(AT_NSPECIAL_2, AG_NUM_WINDOWS, 3);
 
-set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_LENGTH, 15);
-set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_ANIM_FRAMES, 1);
-set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_SFX_FRAME, 4);
+set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_LENGTH, get_move_window_property(AT_NSPECIAL_2, 1, AG_WINDOW_LENGTH, stance));
+set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_ANIM_FRAMES, 7);
+set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_ANIM_FRAME_START, 10);
 set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_HSPEED_TYPE, 1);
 set_window_value(AT_NSPECIAL_2, 1, AG_WINDOW_VSPEED_TYPE, 1);
 
-set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_LENGTH, 3);
-set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAMES, 1);
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_LENGTH, get_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_LENGTH, stance));
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAMES, get_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAMES, stance));
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED, get_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED, stance));
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_HAS_SFX, 1);
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_SFX, asset_get("sfx_bird_upspecial"));
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_SFX_FRAME, 1);
 set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_HSPEED_TYPE, 1);
-set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED_TYPE, 1);
-set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAME_START, 1);
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED_TYPE, get_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_VSPEED_TYPE, stance));
+set_window_value(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAME_START, get_move_window_property(AT_NSPECIAL_2, 2, AG_WINDOW_ANIM_FRAME_START, stance));
 
-set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_LENGTH, 10);
-set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_ANIM_FRAMES, 1);
-set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_ANIM_FRAME_START, 2);
+set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_LENGTH, 15);
+set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_ANIM_FRAMES, 4);
+set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_ANIM_FRAME_START, 24);
 set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_HSPEED_TYPE, 1);
-set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_VSPEED_TYPE, 1);
+set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_VSPEED_TYPE, get_move_window_property(AT_NSPECIAL_2, 3, AG_WINDOW_VSPEED_TYPE, stance));
 set_window_value(AT_NSPECIAL_2, 3, AG_WINDOW_HAS_WHIFFLAG, 1);
 
 set_num_hitboxes(AT_NSPECIAL_2, 1);

@@ -33,8 +33,12 @@ switch(attack)
     
     case AT_NSPECIAL_2:
         //keep the grabbed player in hitstop until the grab is complete.
-		grabbed_player_obj.hitstop = 2;
-		grabbed_player_obj.hitpause = true;
+        can_fast_fall = false;
+
+        if(window != 3) {
+            grabbed_player_obj.hitstop = 2;
+            grabbed_player_obj.hitpause = true;
+        }
 		
 		//if this is the first frame of a window, store the grabbed player's relative position.
 		if (window_timer <= 1) {
@@ -53,6 +57,11 @@ switch(attack)
 			grabbed_player_obj.x = x + ease_circOut( grabbed_player_relative_x, pull_to_x, window_timer, window_length);
 			grabbed_player_obj.y = y + ease_circOut( grabbed_player_relative_y, pull_to_y, window_timer, window_length);
 		}
+
+        if (window == 2) {
+            grabbed_player_obj.x = x + grabbed_player_relative_x;
+            grabbed_player_obj.y = y + grabbed_player_relative_y;
+        }
 
         break;
 

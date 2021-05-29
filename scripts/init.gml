@@ -190,7 +190,7 @@ earth_wave_friction = .12;
 
 char_height = 52;
 idle_anim_speed = 1/6;
-crouch_anim_speed = 1/6;
+crouch_anim_speed = 1/7;
 walk_anim_speed = fire_walk_anim_speed;
 dash_anim_speed = fire_dash_anim_speed;
 pratfall_anim_speed = .25;

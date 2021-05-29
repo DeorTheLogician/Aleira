@@ -301,17 +301,11 @@ boom_box_id = noone;
 stance_locked = false;
 
 //Hitboxes for moves affected by stance
-stance_affected_moves = [AT_NAIR,
-                         AT_NSPECIAL_2,
-                         AT_DATTACK, AT_DTILT,
-                         AT_FTILT,
-                         AT_UTILT,
-                         AT_DSTRONG,
-                         AT_FSTRONG,
-                         AT_USTRONG,
-                         AT_BAIR,
-                         AT_DAIR
-                         AT_FAIR];
+stance_affected_moves = [AT_NSPECIAL_2,
+                         AT_JAB, AT_DATTACK,
+                         AT_DTILT, AT_FTILT, AT_UTILT,
+                         AT_DSTRONG, AT_FSTRONG, AT_USTRONG,
+                         AT_BAIR, AT_DAIR, AT_FAIR, AT_UAIR, AT_NAIR];
 
 move_data = array_create(50, 0);
 

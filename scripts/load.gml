@@ -59,6 +59,10 @@ sprite_change_offset("berimbau1", 18, 84);
 sprite_change_offset("berimbau2", 18, 84);
 sprite_change_offset("berimbau3", 18, 84);
 
+sprite_change_offset("clock_empty", 27, 27);
+sprite_change_offset("clock_big_hand", 27, 27);
+sprite_change_offset("clock_smol_hand", 27, 27);
+
 sprite_change_offset("hfx_wood_small", 80, 80);
 sprite_change_offset("hfx_wood_large", 128, 128);
 sprite_change_offset("hfx_wood_xlarge", 256, 256);

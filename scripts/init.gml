@@ -10,6 +10,7 @@ air_dair_loop_current = 0;
 
 //Stance Variables
 stance = 0; //0 = Fire, 1 = Air, 2 = Water, 3 = Earth
+last_stance = stance;
 num_stances = 4;    //Number of stances.
 stance_change_time = 0; //Time that stance changed.
 stance_color_region = 0;
@@ -17,13 +18,11 @@ flash_color = c_white;
 color_change_time = 15; //Amount of time it takes to change colors
 color_change_overshoot = -10;
 
-var stance_color_fire = c_red;
-var stance_color_air = c_purple;
-var stance_color_water = c_blue;
-var stance_color_earth = c_green;
-
+var stance_color_fire = make_color_rgb(159,17,11);
+var stance_color_air = make_color_rgb(153,11,159);
+var stance_color_water = make_color_rgb(11,69,159);
+var stance_color_earth = make_color_rgb(11,159,29);
 stance_colors = [stance_color_fire, stance_color_air, stance_color_water, stance_color_earth];
-
 stance_color_current = stance_colors[0];
 
 var stance_sound_fire = asset_get("sfx_zetter_fireball_fire");

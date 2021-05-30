@@ -193,7 +193,7 @@ set_hitbox_value(AT_DATTACK, 5, HG_HITBOX_TYPE, 1);
 set_hitbox_value(AT_DATTACK, 5, HG_WINDOW, 4);
 set_hitbox_value(AT_DATTACK, 5, HG_WINDOW_CREATION_FRAME, 0);
 set_hitbox_value(AT_DATTACK, 5, HG_LIFETIME, get_move_hitbox_property(AT_DATTACK, 5, HG_LIFETIME, stance));
-set_hitbox_value(AT_DATTACK, 5, HG_HITBOX_X, 0);
+set_hitbox_value(AT_DATTACK, 5, HG_HITBOX_X, 12);
 set_hitbox_value(AT_DATTACK, 5, HG_HITBOX_Y, -50);
 set_hitbox_value(AT_DATTACK, 5, HG_WIDTH, 126);
 set_hitbox_value(AT_DATTACK, 5, HG_HEIGHT, 78);

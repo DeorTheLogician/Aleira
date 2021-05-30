@@ -3,7 +3,7 @@
 
 //  Windows
 set_move_num_windows(AT_DATTACK, 5);
-set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 6,  6,  6, 10]);
+set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 7,  7,  7, 11]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [11, 12,  9, 13]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, [ 2, 2,  2,  2]);
 

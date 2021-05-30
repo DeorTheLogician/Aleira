@@ -3,5 +3,5 @@ shader_end();
 var element_color = player_id.stance_colors[element];
 
 if(!destroyed) {
-    draw_circle_color(x, y - (bbox_bottom - bbox_top)/2, radius, element_color, element_color, true);
+    draw_sprite_ext(sprite_get("field"), image_index, x, y - (bbox_bottom - bbox_top)/2, 1, 1, 0, element_color, 1);
 }

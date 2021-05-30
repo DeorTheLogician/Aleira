@@ -69,6 +69,10 @@ sprite_change_offset("berimbau2_break", 18, 84);
 sprite_change_offset("berimbau3_break", 18, 84);
 
 sprite_change_offset("field", 130, 130);
+sprite_change_offset("field0", 130, 130);
+sprite_change_offset("field1", 130, 130);
+sprite_change_offset("field2", 130, 130);
+sprite_change_offset("field3", 130, 130);
 
 sprite_change_offset("clock_face", 27, 27);
 sprite_change_offset("clock_big_hand", 27, 27);

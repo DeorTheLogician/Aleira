@@ -87,8 +87,8 @@ set_hitbox_value(AT_NAIR, 1, HG_ANGLE, move_data[AT_NAIR].hitboxes[1][HG_ANGLE][
 set_hitbox_value(AT_NAIR, 1, HG_BASE_KNOCKBACK, move_data[AT_NAIR].hitboxes[1][HG_BASE_KNOCKBACK][stance]);
 set_hitbox_value(AT_NAIR, 1, HG_KNOCKBACK_SCALING, move_data[AT_NAIR].hitboxes[1][HG_KNOCKBACK_SCALING][stance]);
 set_hitbox_value(AT_NAIR, 1, HG_FINAL_BASE_KNOCKBACK, move_data[AT_NAIR].hitboxes[1][HG_FINAL_BASE_KNOCKBACK][stance]);
-set_hitbox_value(AT_NAIR, 1, HG_BASE_HITPAUSE, 5);
-set_hitbox_value(AT_NAIR, 1, HG_HITPAUSE_SCALING, .5);
+set_hitbox_value(AT_NAIR, 1, HG_BASE_HITPAUSE, 7);
+set_hitbox_value(AT_NAIR, 1, HG_HITPAUSE_SCALING, 1.2);
 set_hitbox_value(AT_NAIR, 1, HG_VISUAL_EFFECT, move_data[AT_NAIR].hitboxes[1][HG_VISUAL_EFFECT][stance]);
 set_hitbox_value(AT_NAIR, 1, HG_HIT_SFX, move_data[AT_NAIR].hitboxes[1][HG_HIT_SFX][stance]);
 set_hitbox_value(AT_NAIR, 1, HG_ANGLE_FLIPPER, 3);
@@ -109,8 +109,8 @@ set_hitbox_value(AT_NAIR, 2, HG_ANGLE, move_data[AT_NAIR].hitboxes[2][HG_ANGLE][
 set_hitbox_value(AT_NAIR, 2, HG_BASE_KNOCKBACK, move_data[AT_NAIR].hitboxes[2][HG_BASE_KNOCKBACK][stance]);
 set_hitbox_value(AT_NAIR, 2, HG_KNOCKBACK_SCALING, move_data[AT_NAIR].hitboxes[2][HG_KNOCKBACK_SCALING][stance]);
 set_hitbox_value(AT_NAIR, 2, HG_FINAL_BASE_KNOCKBACK, move_data[AT_NAIR].hitboxes[2][HG_FINAL_BASE_KNOCKBACK][stance]);
-set_hitbox_value(AT_NAIR, 2, HG_BASE_HITPAUSE, 5);
-set_hitbox_value(AT_NAIR, 2, HG_HITPAUSE_SCALING, .4);
+set_hitbox_value(AT_NAIR, 2, HG_BASE_HITPAUSE, 6);
+set_hitbox_value(AT_NAIR, 2, HG_HITPAUSE_SCALING, .5);
 set_hitbox_value(AT_NAIR, 2, HG_HIT_SFX, move_data[AT_NAIR].hitboxes[2][HG_HIT_SFX][stance]);
 
 

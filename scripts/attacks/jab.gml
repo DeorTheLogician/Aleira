@@ -9,7 +9,7 @@ set_move_window_property(AT_JAB, 1, AG_WINDOW_SFX_FRAME,[ 3,  3,  3, 12]);
 
 set_move_window_property(AT_JAB, 2, AG_WINDOW_LENGTH, [ 3,  3,  7, 3]);
 
-set_move_window_property(AT_JAB, 3, AG_WINDOW_LENGTH,       [18, 18, 18, 12]);
+set_move_window_property(AT_JAB, 3, AG_WINDOW_LENGTH,       [14, 14, 14, 12]);
 set_move_window_property(AT_JAB, 3, AG_WINDOW_CANCEL_TYPE,  [ 1,  1,  1,  0]);
 
 //  Hitboxes
@@ -43,7 +43,6 @@ set_window_value(AT_JAB, 2, AG_WINDOW_ANIM_FRAME_START, 2);
 set_window_value(AT_JAB, 3, AG_WINDOW_LENGTH, get_move_window_property(AT_JAB, 3, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_JAB, 3, AG_WINDOW_ANIM_FRAMES, 4);
 set_window_value(AT_JAB, 3, AG_WINDOW_ANIM_FRAME_START, 3);
-set_window_value(AT_JAB, 3, AG_WINDOW_HAS_WHIFFLAG, 1);
 set_window_value(AT_JAB, 3, AG_WINDOW_CANCEL_TYPE, get_move_window_property(AT_JAB, 3, AG_WINDOW_CANCEL_TYPE, stance));
 set_window_value(AT_JAB, 3, AG_WINDOW_CANCEL_FRAME, 9);
 

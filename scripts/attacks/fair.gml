@@ -10,10 +10,11 @@ set_move_window_property(AT_FAIR, 1, AG_WINDOW_SFX, [asset_get("sfx_swipe_medium
 
 set_move_window_property(AT_FAIR, 2, AG_WINDOW_LENGTH,              [ 6, 14, 24,  6]);
 set_move_window_property(AT_FAIR, 2, AG_WINDOW_ANIM_FRAMES,         [ 1,  9,  1,  1]);
+set_move_window_property(AT_FAIR, 2, AG_WINDOW_ANIM_FRAME_START,    [ 2,  2,  3,  2]);
 set_move_window_property(AT_FAIR, 2, AG_WINDOW_SFX_FRAME,           [99,  9, 99, 99]);
 
 set_move_window_property(AT_FAIR, 3, AG_WINDOW_LENGTH,          [11, 11,  7, 13]);
-set_move_window_property(AT_FAIR, 3, AG_WINDOW_ANIM_FRAMES,     [ 3,  3,  2,  3]);
+set_move_window_property(AT_FAIR, 3, AG_WINDOW_ANIM_FRAMES,     [ 4,  4,  4,  3]);
 set_move_window_property(AT_FAIR, 3, AG_WINDOW_ANIM_FRAME_START,[ 3,  3,  4,  3]);
 
 //  Hitboxes
@@ -62,7 +63,7 @@ set_window_value(AT_FAIR, 1, AG_WINDOW_SFX_FRAME, get_move_window_property(AT_FA
 
 set_window_value(AT_FAIR, 2, AG_WINDOW_LENGTH, get_move_window_property(AT_FAIR, 2, AG_WINDOW_LENGTH, stance));
 set_window_value(AT_FAIR, 2, AG_WINDOW_ANIM_FRAMES, get_move_window_property(AT_FAIR, 2, AG_WINDOW_ANIM_FRAMES, stance));
-set_window_value(AT_FAIR, 2, AG_WINDOW_ANIM_FRAME_START, 2);
+set_window_value(AT_FAIR, 2, AG_WINDOW_ANIM_FRAME_START, get_move_window_property(AT_FAIR, 2, AG_WINDOW_ANIM_FRAME_START, stance));
 set_window_value(AT_FAIR, 2, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_FAIR, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_medium1"));
 set_window_value(AT_FAIR, 2, AG_WINDOW_SFX_FRAME, get_move_window_property(AT_FAIR, 2, AG_WINDOW_SFX_FRAME, stance));

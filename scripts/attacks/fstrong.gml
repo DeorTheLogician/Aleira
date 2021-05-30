@@ -79,7 +79,7 @@ set_hitbox_value(AT_FSTRONG, 1, HG_KNOCKBACK_SCALING, get_move_hitbox_property(A
 set_hitbox_value(AT_FSTRONG, 1, HG_FINAL_BASE_KNOCKBACK, get_move_hitbox_property(AT_FSTRONG, 1, HG_FINAL_BASE_KNOCKBACK, stance));
 set_hitbox_value(AT_FSTRONG, 1, HG_EFFECT, 0);
 set_hitbox_value(AT_FSTRONG, 1, HG_BASE_HITPAUSE, 8);
-set_hitbox_value(AT_FSTRONG, 1, HG_HITPAUSE_SCALING, 0.80);
+set_hitbox_value(AT_FSTRONG, 1, HG_HITPAUSE_SCALING, 1);
 set_hitbox_value(AT_FSTRONG, 1, HG_VISUAL_EFFECT, 304);
 set_hitbox_value(AT_FSTRONG, 1, HG_HIT_SFX, get_move_hitbox_property(AT_FSTRONG, 1, HG_HIT_SFX, stance));
 
@@ -99,7 +99,7 @@ set_hitbox_value(AT_FSTRONG, 2, HG_BASE_KNOCKBACK, get_move_hitbox_property(AT_F
 set_hitbox_value(AT_FSTRONG, 2, HG_KNOCKBACK_SCALING, get_move_hitbox_property(AT_FSTRONG, 2, HG_KNOCKBACK_SCALING, stance));
 set_hitbox_value(AT_FSTRONG, 2, HG_EFFECT, 0);
 set_hitbox_value(AT_FSTRONG, 2, HG_BASE_HITPAUSE, 10);
-set_hitbox_value(AT_FSTRONG, 2, HG_HITPAUSE_SCALING, 1);
+set_hitbox_value(AT_FSTRONG, 2, HG_HITPAUSE_SCALING, 1.1);
 set_hitbox_value(AT_FSTRONG, 2, HG_VISUAL_EFFECT, get_move_hitbox_property(AT_FSTRONG, 2, HG_VISUAL_EFFECT, stance));
 set_hitbox_value(AT_FSTRONG, 2, HG_HIT_SFX, get_move_hitbox_property(AT_FSTRONG, 2, HG_HIT_SFX, stance));
 

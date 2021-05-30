@@ -79,8 +79,8 @@ set_hitbox_value(AT_DTILT, 1, HG_ANGLE, get_move_hitbox_property(AT_DTILT, 1, HG
 set_hitbox_value(AT_DTILT, 1, HG_BASE_KNOCKBACK, get_move_hitbox_property(AT_DTILT, 1, HG_BASE_KNOCKBACK, stance));
 set_hitbox_value(AT_DTILT, 1, HG_KNOCKBACK_SCALING, get_move_hitbox_property(AT_DTILT, 1, HG_KNOCKBACK_SCALING, stance));
 set_hitbox_value(AT_DTILT, 1, HG_FINAL_BASE_KNOCKBACK, get_move_hitbox_property(AT_DTILT, 1, HG_FINAL_BASE_KNOCKBACK, stance));
-set_hitbox_value(AT_DTILT, 1, HG_BASE_HITPAUSE, 5);
-set_hitbox_value(AT_DTILT, 1, HG_HITPAUSE_SCALING, .35);
+set_hitbox_value(AT_DTILT, 1, HG_BASE_HITPAUSE, 7);
+set_hitbox_value(AT_DTILT, 1, HG_HITPAUSE_SCALING, .4);
 set_hitbox_value(AT_DTILT, 1, HG_VISUAL_EFFECT_X_OFFSET, 20);
 set_hitbox_value(AT_DTILT, 1, HG_HIT_SFX, asset_get("sfx_blow_weak2"));
 set_hitbox_value(AT_DTILT, 1, HG_GROUNDEDNESS, 1);
@@ -99,8 +99,8 @@ set_hitbox_value(AT_DTILT, 2, HG_ANGLE, get_move_hitbox_property(AT_DTILT, 2, HG
 set_hitbox_value(AT_DTILT, 2, HG_BASE_KNOCKBACK, get_move_hitbox_property(AT_DTILT, 2, HG_BASE_KNOCKBACK, stance));
 set_hitbox_value(AT_DTILT, 2, HG_KNOCKBACK_SCALING, get_move_hitbox_property(AT_DTILT, 2, HG_KNOCKBACK_SCALING, stance));
 set_hitbox_value(AT_DTILT, 2, HG_FINAL_BASE_KNOCKBACK, get_move_hitbox_property(AT_DTILT, 2, HG_FINAL_BASE_KNOCKBACK, stance));
-set_hitbox_value(AT_DTILT, 2, HG_BASE_HITPAUSE, 5);
-set_hitbox_value(AT_DTILT, 2, HG_HITPAUSE_SCALING, .35);
+set_hitbox_value(AT_DTILT, 2, HG_BASE_HITPAUSE, 7);
+set_hitbox_value(AT_DTILT, 2, HG_HITPAUSE_SCALING, .4);
 set_hitbox_value(AT_DTILT, 2, HG_VISUAL_EFFECT_X_OFFSET, 20);
 set_hitbox_value(AT_DTILT, 2, HG_HIT_SFX, asset_get("sfx_blow_weak2"));
 set_hitbox_value(AT_DTILT, 2, HG_GROUNDEDNESS, 2);

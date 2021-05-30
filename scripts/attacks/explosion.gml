@@ -14,7 +14,7 @@ set_hitbox_value(AT_EXTRA_1, 1, HG_BASE_KNOCKBACK, 8);
 set_hitbox_value(AT_EXTRA_1, 1, HG_KNOCKBACK_SCALING, .25);
 set_hitbox_value(AT_EXTRA_1, 1, HG_EFFECT, 1);
 set_hitbox_value(AT_EXTRA_1, 1, HG_BASE_HITPAUSE, 8);
-set_hitbox_value(AT_EXTRA_1, 1, HG_HITPAUSE_SCALING, .5);
+set_hitbox_value(AT_EXTRA_1, 1, HG_HITPAUSE_SCALING, .35);
 set_hitbox_value(AT_EXTRA_1, 1, HG_EXTRA_HITPAUSE, 12);
 set_hitbox_value(AT_EXTRA_1, 1, HG_VISUAL_EFFECT, 3);
 set_hitbox_value(AT_EXTRA_1, 1, HG_HIT_SFX, asset_get("sfx_zetter_upb_hit"));

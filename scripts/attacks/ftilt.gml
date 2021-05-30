@@ -24,8 +24,8 @@ set_move_hitbox_property(AT_FTILT, 2, HG_LIFETIME, [ 3,  3,  7,  3]);
 set_move_hitbox_property(AT_FTILT, 2, HG_ANGLE, [361,361,361, 35]);
 set_move_hitbox_property(AT_FTILT, 2, HG_DAMAGE, [ 7,  6,  6,  8]);
 set_move_hitbox_property(AT_FTILT, 2, HG_BASE_KNOCKBACK, [ 5,  5,  6,  7]);
-set_move_hitbox_property(AT_FTILT, 2, HG_KNOCKBACK_SCALING, [.2, .2, .3, .2]);
-set_move_hitbox_property(AT_FTILT, 2, HG_FINAL_BASE_KNOCKBACK, [ 5,  5,  4,  7]);
+set_move_hitbox_property(AT_FTILT, 2, HG_KNOCKBACK_SCALING, [.25, .25, .35, .25]);
+set_move_hitbox_property(AT_FTILT, 2, HG_FINAL_BASE_KNOCKBACK, [ 5.5,  5,  4,  7]);
 // set_move_hitbox_property(AT_FTILT, 2, HG_VISUAL_EFFECT, [303,303, 10,192]);
 
 
@@ -68,8 +68,8 @@ set_hitbox_value(AT_FTILT, 1, HG_BASE_KNOCKBACK, get_move_hitbox_property(AT_FTI
 set_hitbox_value(AT_FTILT, 1, HG_KNOCKBACK_SCALING, get_move_hitbox_property(AT_FTILT, 1, HG_KNOCKBACK_SCALING, stance));
 set_hitbox_value(AT_FTILT, 1, HG_FINAL_BASE_KNOCKBACK, get_move_hitbox_property(AT_FTILT, 1, HG_FINAL_BASE_KNOCKBACK, stance));
 set_hitbox_value(AT_FTILT, 1, HG_EFFECT, 0);
-set_hitbox_value(AT_FTILT, 1, HG_BASE_HITPAUSE, 6);
-set_hitbox_value(AT_FTILT, 1, HG_HITPAUSE_SCALING, 0.60);
+set_hitbox_value(AT_FTILT, 1, HG_BASE_HITPAUSE, 4);
+set_hitbox_value(AT_FTILT, 1, HG_HITPAUSE_SCALING, 0.90);
 set_hitbox_value(AT_FTILT, 1, HG_VISUAL_EFFECT, 301);
 set_hitbox_value(AT_FTILT, 1, HG_VISUAL_EFFECT_X_OFFSET, 16);
 set_hitbox_value(AT_FTILT, 1, HG_VISUAL_EFFECT_Y_OFFSET, 0);
@@ -92,8 +92,8 @@ set_hitbox_value(AT_FTILT, 2, HG_BASE_KNOCKBACK, get_move_hitbox_property(AT_FTI
 set_hitbox_value(AT_FTILT, 2, HG_KNOCKBACK_SCALING, get_move_hitbox_property(AT_FTILT, 2, HG_KNOCKBACK_SCALING, stance));
 set_hitbox_value(AT_FTILT, 2, HG_FINAL_BASE_KNOCKBACK, get_move_hitbox_property(AT_FTILT, 2, HG_FINAL_BASE_KNOCKBACK, stance));
 set_hitbox_value(AT_FTILT, 2, HG_EFFECT, 0);
-set_hitbox_value(AT_FTILT, 2, HG_BASE_HITPAUSE, 4);
-set_hitbox_value(AT_FTILT, 2, HG_HITPAUSE_SCALING, 0.25);
+set_hitbox_value(AT_FTILT, 2, HG_BASE_HITPAUSE, 7);
+set_hitbox_value(AT_FTILT, 2, HG_HITPAUSE_SCALING, 0.35);
 set_hitbox_value(AT_FTILT, 2, HG_VISUAL_EFFECT, 301);
 set_hitbox_value(AT_FTILT, 2, HG_VISUAL_EFFECT_X_OFFSET, 16);
 set_hitbox_value(AT_FTILT, 2, HG_VISUAL_EFFECT_Y_OFFSET, 0);

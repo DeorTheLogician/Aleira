@@ -3,7 +3,7 @@
 
 //  Windows
 set_move_num_windows(AT_DATTACK, 5);
-set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 6,  6,  6, 10]);
+set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 7,  7,  7, 11]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [14, 16, 12, 17]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, [ 2, 2,  2,  2]);
 
@@ -101,7 +101,7 @@ set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAMES, get_move_window_property(
 set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, stance));
-set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_WHIFFLAG, true);
+set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_WHIFFLAG, 1);
 
 set_num_hitboxes(AT_DATTACK, 5);
 

@@ -4,7 +4,7 @@
 //  Windows
 set_move_num_windows(AT_DATTACK, 5);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 6,  6,  6, 10]);
-set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [14, 16, 12, 17]);
+set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [11, 12,  9, 13]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, [ 2, 2,  2,  2]);
 
 set_move_window_property(AT_DATTACK, 2, AG_WINDOW_LENGTH, [ 4,  2,  3,  8]);
@@ -28,7 +28,7 @@ set_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, [ 8,  8,  8,
 
 //  Hitboxes
 set_move_num_hitboxes(AT_DATTACK, 5);
-set_move_hitbox_property(AT_DATTACK, 1, HG_WINDOW, [ 2, 20,  2, 2])
+set_move_hitbox_property(AT_DATTACK, 1, HG_WINDOW, [ 2, 20, 20, 2]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_LIFETIME, [ 2,  2,  2,  8]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_DAMAGE, [ 8,  8,  1, 16]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_ANGLE, [70, 70,361,361]);
@@ -36,7 +36,7 @@ set_move_hitbox_property(AT_DATTACK, 1, HG_BASE_KNOCKBACK, [ 8,  8,  5,  8]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_KNOCKBACK_SCALING, [.5,  0,  0,.75]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_FINAL_BASE_KNOCKBACK, [ 8,  8,  5,  5]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_VISUAL_EFFECT, [303,303, 10,192]);
-set_move_hitbox_property(AT_DATTACK, 1, HG_HIT_SFX, [asset_get("sfx_zetter_upb_hit"), asset_get("sfx_blow_weak1"), asset_get("sfx_waterhit_medium"), asset_get("sfx_blow_heavy2")]);
+set_move_hitbox_property(AT_DATTACK, 1, HG_HIT_SFX, [asset_get("sfx_blow_medium1"), asset_get("sfx_blow_weak1"), asset_get("sfx_waterhit_medium1"), asset_get("sfx_blow_heavy2")]);
 
 set_move_hitbox_property(AT_DATTACK, 2, HG_WINDOW, [ 3,  3,  3,  20]);
 set_move_hitbox_property(AT_DATTACK, 2, HG_EFFECT, [ 1,  0,  0,  0]);
@@ -101,7 +101,7 @@ set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAMES, get_move_window_property(
 set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_HAS_CUSTOM_FRICTION, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_CUSTOM_GROUND_FRICTION, stance));
 set_window_value(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, get_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, stance));
-set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_WHIFFLAG, true);
+set_window_value(AT_DATTACK, 5, AG_WINDOW_HAS_WHIFFLAG, 1);
 
 set_num_hitboxes(AT_DATTACK, 5);
 
@@ -125,6 +125,7 @@ set_hitbox_value(AT_DATTACK, 1, HG_VISUAL_EFFECT, get_move_hitbox_property(AT_DA
 set_hitbox_value(AT_DATTACK, 1, HG_HIT_SFX, get_move_hitbox_property(AT_DATTACK, 1, HG_HIT_SFX, stance));
 set_hitbox_value(AT_DATTACK, 1, HG_DRIFT_MULTIPLIER, 1);
 set_hitbox_value(AT_DATTACK, 1, HG_SDI_MULTIPLIER, 1);
+set_hitbox_value(AT_DATTACK, 1, HG_HIT_LOCKOUT, 10);
 
 set_hitbox_value(AT_DATTACK, 2, HG_HITBOX_TYPE, 1);
 set_hitbox_value(AT_DATTACK, 2, HG_WINDOW, get_move_hitbox_property(AT_DATTACK, 2, HG_WINDOW, stance));

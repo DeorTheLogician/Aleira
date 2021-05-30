@@ -7,7 +7,7 @@ set_move_window_property(AT_DATTACK, 1, AG_WINDOW_LENGTH, [ 7,  7,  7, 11]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_HSPEED, [11, 12,  9, 13]);
 set_move_window_property(AT_DATTACK, 1, AG_WINDOW_ANIM_FRAMES, [ 2, 2,  2,  2]);
 
-set_move_window_property(AT_DATTACK, 2, AG_WINDOW_LENGTH, [ 4,  2,  3,  8]);
+set_move_window_property(AT_DATTACK, 2, AG_WINDOW_LENGTH, [ 4,  2,  3,  4]);
 set_move_window_property(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAMES, [ 2,  1,  2,  1]);
 set_move_window_property(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAME_START, [ 2,  3,  2,  2]);
 set_move_window_property(AT_DATTACK, 2, AG_WINDOW_SFX_FRAME, [ 3,  1,  2,  8]);
@@ -29,7 +29,7 @@ set_move_window_property(AT_DATTACK, 5, AG_WINDOW_ANIM_FRAME_START, [ 8,  8,  8,
 //  Hitboxes
 set_move_num_hitboxes(AT_DATTACK, 5);
 set_move_hitbox_property(AT_DATTACK, 1, HG_WINDOW, [ 2, 20, 20, 2]);
-set_move_hitbox_property(AT_DATTACK, 1, HG_LIFETIME, [ 2,  2,  2,  8]);
+set_move_hitbox_property(AT_DATTACK, 1, HG_LIFETIME, [ 2,  2,  2,  4]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_DAMAGE, [ 8,  8,  1, 16]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_ANGLE, [70, 70,361,361]);
 set_move_hitbox_property(AT_DATTACK, 1, HG_BASE_KNOCKBACK, [ 8,  8,  5,  8]);

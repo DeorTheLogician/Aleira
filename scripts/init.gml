@@ -141,7 +141,7 @@ water_short_hop_speed = 6.5;
 water_djump_speed = 11.5;
 water_max_jump_hsp = 4;
 water_air_max_speed = 4;
-water_air_accel = 0.15;
+water_air_accel = 0.3;
 
 water_air_friction = .04;
 water_max_djumps = 1;
@@ -174,7 +174,7 @@ earth_short_hop_speed = 7.4;
 earth_djump_speed = 12;
 earth_max_jump_hsp = 4;
 earth_air_max_speed = 4;
-earth_air_accel = 0.15;
+earth_air_accel = 0.3;
 
 earth_air_friction = .05;
 earth_max_djumps = 1;

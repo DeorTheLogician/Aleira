@@ -1,7 +1,7 @@
 //draw_hud - the x position of your HUD element is 48*(i-1)
 
 // draw_debug_text(5, 435, "window: " + string(window));
-// draw_debug_text(5, 450, "vsp: " + string(vsp));
+// draw_debug_text(5, 450, "afterimage_length: " + string(afterimage_length));
 // draw_debug_text(5, 420, "state_timer: " + string(state_timer - 1));
 
 if("stance" in self) {
@@ -16,7 +16,7 @@ if("stance" in self) {
     } else
         var clock_big_hand_angle = current_stance_angle;
 
-    var clock_small_hand_angle = ((360/ticker_max) * stance_ticker) % 360;
+    var clock_small_hand_angle = ((360/ticker_max) * (stance_ticker - 2)) % 360;
 
     draw_sprite_ext(sprite_get("clock_face"), 0, clock_offset_x, clock_offset_y, 1, 1, 0, c_white, 1);
     draw_sprite_ext(sprite_get("clock_big_hand"), 0, clock_offset_x, clock_offset_y, 1, 1, -clock_big_hand_angle, c_white, 1);

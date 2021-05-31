@@ -41,3 +41,14 @@ v0_14_changelog =
 
 Visuals:
     - Afterimage opacity reduced.";
+    
+v0_15_changelog =
+"v0.15
+
+Visuals:
+    - Added CSS draw functionality.
+    - Added victory background.
+    - Fixed coloration bug.
+
+Audio:
+    - Added victory theme."

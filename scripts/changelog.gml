@@ -26,3 +26,12 @@ Visuals:
           
         + For some visual flare, you get extra
           afterimages during fspecial.";
+
+v0_13_changelog =
+"v0.13
+
+Visuals:
+    - Number of afterimages reduced.
+    
+Audio:
+    - Restored missing audio from dspecial.";

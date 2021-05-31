@@ -44,7 +44,7 @@ set_window_value(AT_JAB, 3, AG_WINDOW_LENGTH, get_move_window_property(AT_JAB, 3
 set_window_value(AT_JAB, 3, AG_WINDOW_ANIM_FRAMES, 4);
 set_window_value(AT_JAB, 3, AG_WINDOW_ANIM_FRAME_START, 3);
 set_window_value(AT_JAB, 3, AG_WINDOW_CANCEL_TYPE, get_move_window_property(AT_JAB, 3, AG_WINDOW_CANCEL_TYPE, stance));
-set_window_value(AT_JAB, 3, AG_WINDOW_CANCEL_FRAME, 9);
+set_window_value(AT_JAB, 3, AG_WINDOW_CANCEL_FRAME, 7);
 
 set_window_value(AT_JAB, 4, AG_WINDOW_LENGTH, 2);
 set_window_value(AT_JAB, 4, AG_WINDOW_ANIM_FRAMES, 1);

@@ -130,7 +130,7 @@ if(window == 1 && window_timer == 1) {
 }
 
 //Temporary stance changer.
-if(window == get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && stance_ticker % ticker_segment_length == 2) {
+if(window == get_attack_value(attack, AG_NUM_WINDOWS) && window_timer == 1 && stance_ticker % ticker_segment_length == 0) {
     if(ds_list_find_index(forward_moves, attack) != -1) {
         adjust_stance(1, num_stances);
     } else if(ds_list_find_index(skip_moves, attack) != -1) {

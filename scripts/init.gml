@@ -4,6 +4,12 @@ hurtbox_dash_spr = sprite_get("dash_hurt");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
+//Afterimage variables
+afterimage_length_fspec = 5;
+afterimage_length = 1;
+afterimage_ledger = ds_list_create();
+afterimage_min_speed = 0;
+
 //Move variables
 dspecial_cooldown = 60;
 dattack_earth_armor = 18;

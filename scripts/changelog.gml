@@ -51,4 +51,12 @@ Visuals:
     - Fixed coloration bug.
 
 Audio:
-    - Added victory theme."
+    - Added victory theme.";
+
+v0_16_changelog = 
+"v0.16
+
+Visuals:
+    - Added two new alts:
+        + Lone Star
+        + Logician";

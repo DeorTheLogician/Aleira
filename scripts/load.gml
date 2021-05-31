@@ -83,3 +83,6 @@ sprite_change_offset("hfx_wood_large", 128, 128);
 sprite_change_offset("hfx_wood_xlarge", 256, 256);
 sprite_change_offset("hfx_leaf_small", 72, 72);
 sprite_change_offset("hfx_leaf_xlarge", 256, 256);
+
+set_victory_theme(sound_get("aleira_vic_theme"));
+set_victory_bg(sprite_get("aleiravictorybg"));

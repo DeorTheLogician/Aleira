@@ -22,7 +22,7 @@ set_color_profile_slot_range( 4, 37, 5, 23 );
 
 
 // ALTERNATE COLORS
-set_num_palettes( 19 );
+set_num_palettes( 22 );
 
 // Blue
 set_color_profile_slot( 1, 0, 48, 114, 207 ); //Wings
@@ -150,12 +150,26 @@ set_color_profile_slot( 18, 2, 0, 255, 0 ); //Elements
 set_color_profile_slot( 18, 3, 255, 69, 231 ); //Eyes/Spots
 set_color_profile_slot( 18, 4, 255, 255, 255 ); //Fur
 
-// BLM
-set_color_profile_slot( 19, 0, 135, 52, 0 ); //Wings
-set_color_profile_slot( 19, 1, 168, 67, 3 ); //Crown
+// Lone Star
+set_color_profile_slot( 19, 0, 191, 10, 48 ); //Wings
+set_color_profile_slot( 19, 1, 0, 40, 104 ); //Crown
 set_color_profile_slot( 19, 2, 0, 255, 0 ); //Elements
-set_color_profile_slot( 19, 3, 255, 255, 255 ); //Eyes/Spots
-set_color_profile_slot( 19, 4, 255, 239, 0 ); //Fur
+set_color_profile_slot( 19, 3, 14, 70, 158 ); //Eyes/Spots
+set_color_profile_slot( 19, 4, 237, 255, 217 ); //Fur
+
+// Logician
+set_color_profile_slot( 20, 0, 110, 83, 59 ); //Wings
+set_color_profile_slot( 20, 1, 69, 38, 145 ); //Crown
+set_color_profile_slot( 20, 2, 0, 255, 0 ); //Elements
+set_color_profile_slot( 20, 3, 102, 108, 117 ); //Eyes/Spots
+set_color_profile_slot( 20, 4, 245, 235, 184 ); //Fur
+
+// BLM
+set_color_profile_slot( 21, 0, 135, 52, 0 ); //Wings
+set_color_profile_slot( 21, 1, 168, 67, 3 ); //Crown
+set_color_profile_slot( 21, 2, 0, 255, 0 ); //Elements
+set_color_profile_slot( 21, 3, 255, 255, 255 ); //Eyes/Spots
+set_color_profile_slot( 21, 4, 255, 239, 0 ); //Fur
 
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.

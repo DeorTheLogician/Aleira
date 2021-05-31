@@ -5,7 +5,7 @@ patch_ver = "0.1";
 patch_day = "00";
 patch_month = "Alpha";
 
-var num_alts = 20;
+var num_alts = 22;
 var alt_cur = get_player_color(player);
 
 //Alt name init. var doesn't work with arrays lol
@@ -29,7 +29,9 @@ alt_name[15]  = "oh dear...";
 alt_name[16]  = "BirdGuy";
 alt_name[17]  = "ParKing";
 alt_name[18]  = "Who?";
-alt_name[19]  = "BLM";
+alt_name[19]  = "Lone Star";
+alt_name[20]  = "Logician";
+alt_name[21]  = "BLM";
 
 //From FungiWizard "Siren"
 draw_set_font(asset_get("tinyFont"));

@@ -21,7 +21,7 @@ stance = 0; //0 = Fire, 1 = Air, 2 = Water, 3 = Earth
 last_stance = stance;
 num_stances = 4;    //Number of stances.
 stance_change_time = 0; //Time that stance changed.
-stance_color_region = 0;
+stance_color_region = 2;
 flash_color = c_white;
 color_change_time = 15; //Amount of time it takes to change colors
 color_change_overshoot = -10;

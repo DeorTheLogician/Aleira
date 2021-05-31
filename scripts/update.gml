@@ -8,9 +8,12 @@ if(!instance_exists(boom_box_id)) {
 }
 
 //Afterimage ledger
+var aimg_a = .3;
+var aimg_b = .8;
+
 if(attack == AT_FSPECIAL && window == 1 || window == 2) {
     afterimage_length = afterimage_length_fspec;
-} if(afterimage_length > round((stance_ticker % ticker_segment_length)*.6 + 1.1)) {
+} if(afterimage_length > round((stance_ticker % ticker_segment_length)*aimg_a + aimg_b)) {
     afterimage_length = max(0, afterimage_length - 1);
 }
 

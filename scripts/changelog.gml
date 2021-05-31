@@ -35,3 +35,9 @@ Visuals:
     
 Audio:
     - Restored missing audio from dspecial.";
+    
+v0_14_changelog = 
+"v0.14
+
+Visuals:
+    - Afterimage opacity reduced.";

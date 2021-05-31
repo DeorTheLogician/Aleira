@@ -42,9 +42,10 @@ if(time_since_stance_change < color_change_time) {
 if(state_cat != SC_HITSTUN && point_distance(0,0,hsp,vsp) >= afterimage_min_speed) {
     for(var i = 0; i < ds_list_size(afterimage_ledger); i++) {
         // var is_utilt = attack == AT_UTILT && window != 0;
-        var lowest_alpha = .75;
+        var lowest_alpha = .5;
+        var highest_alpha = .75;
         gpu_set_blendmode(bm_add);
-        draw_sprite_ext(afterimage_ledger[| i][2], afterimage_ledger[| i][3], afterimage_ledger[| i][0], afterimage_ledger[| i][1], spr_dir, 1, 0, afterimage_ledger[| i][4], lowest_alpha + ((1-lowest_alpha)/ds_list_size(afterimage_ledger))*i);
+        draw_sprite_ext(afterimage_ledger[| i][2], afterimage_ledger[| i][3], afterimage_ledger[| i][0], afterimage_ledger[| i][1], spr_dir, 1, 0, afterimage_ledger[| i][4], lowest_alpha + ((highest_alpha-lowest_alpha)/ds_list_size(afterimage_ledger))*i);
         // draw_circle_color(afterimage_ledger[| i][0], afterimage_ledger[| i][1] + (bbox_top - bbox_bottom)/2 + (is_utilt? -8:8) - 8 * free, .05*i*i, stance_color_current, afterimage_ledger[| i][4], false);
         gpu_set_blendmode(bm_normal);
     }

@@ -129,26 +129,33 @@ set_color_profile_slot( 15, 2, 0, 255, 0 ); //Elements
 set_color_profile_slot( 15, 3, 237, 222, 108 ); //Eyes/Spots
 set_color_profile_slot( 15, 4, 140, 104, 84 ); //Fur
 
-// ParKing
-set_color_profile_slot( 16, 0, 191, 64, 6 ); //Wings
-set_color_profile_slot( 16, 1, 191, 64, 6 ); //Crown
+// BirdGuy
+set_color_profile_slot( 16, 0, 98, 69, 201 ); //Wings
+set_color_profile_slot( 16, 1, 255, 250, 41 ); //Crown
 set_color_profile_slot( 16, 2, 0, 255, 0 ); //Elements
-set_color_profile_slot( 16, 3, 63, 0, 84 ); //Eyes/Spots
-set_color_profile_slot( 16, 4, 242, 181, 73 ); //Fur
+set_color_profile_slot( 16, 3, 17, 23, 40 ); //Eyes/Spots
+set_color_profile_slot( 16, 4, 119, 98, 148 ); //Fur
+
+// ParKing
+set_color_profile_slot( 17, 0, 191, 64, 6 ); //Wings
+set_color_profile_slot( 17, 1, 191, 64, 6 ); //Crown
+set_color_profile_slot( 17, 2, 0, 255, 0 ); //Elements
+set_color_profile_slot( 17, 3, 63, 0, 84 ); //Eyes/Spots
+set_color_profile_slot( 17, 4, 242, 181, 73 ); //Fur
 
 // Who?
-set_color_profile_slot( 17, 0, 133, 190, 255 ); //Wings
-set_color_profile_slot( 17, 1, 189, 89, 176 ); //Crown
-set_color_profile_slot( 17, 2, 0, 255, 0 ); //Elements
-set_color_profile_slot( 17, 3, 255, 69, 231 ); //Eyes/Spots
-set_color_profile_slot( 17, 4, 255, 255, 255 ); //Fur
+set_color_profile_slot( 18, 0, 133, 190, 255 ); //Wings
+set_color_profile_slot( 18, 1, 189, 89, 176 ); //Crown
+set_color_profile_slot( 18, 2, 0, 255, 0 ); //Elements
+set_color_profile_slot( 18, 3, 255, 69, 231 ); //Eyes/Spots
+set_color_profile_slot( 18, 4, 255, 255, 255 ); //Fur
 
 // BLM
-set_color_profile_slot( 18, 0, 135, 52, 0 ); //Wings
-set_color_profile_slot( 18, 1, 168, 67, 3 ); //Crown
-set_color_profile_slot( 18, 2, 0, 255, 0 ); //Elements
-set_color_profile_slot( 18, 3, 255, 255, 255 ); //Eyes/Spots
-set_color_profile_slot( 18, 4, 255, 239, 0 ); //Fur
+set_color_profile_slot( 19, 0, 135, 52, 0 ); //Wings
+set_color_profile_slot( 19, 1, 168, 67, 3 ); //Crown
+set_color_profile_slot( 19, 2, 0, 255, 0 ); //Elements
+set_color_profile_slot( 19, 3, 255, 255, 255 ); //Eyes/Spots
+set_color_profile_slot( 19, 4, 255, 239, 0 ); //Fur
 
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.
